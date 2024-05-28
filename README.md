@@ -32,6 +32,7 @@ Typically, these instructions will be embedded within each script, but some scri
 
 | Category    | Script Name              | Description                                                                |
 | ----------- | ------------------------ | -------------------------------------------------------------------------- |
+| Utility     | Get-NextValue.ps1        | Randomly select an item from a list of values                              |
 | Utility     | ToggleNumlockLoop.ps1    | Toggles the numlock key on/off every 60 seconds to keep the computer alive |
 | Environment | display-env.ps1          | Fetches and displayes the current environment variables, sorted in a table |
 | Git         | git-author-analytics.ps1 | creates a CSV files containing the author namw and date of all commits     |
