@@ -35,6 +35,7 @@ Typically, these instructions will be embedded within each script, but some scri
 | Script Name           | Description                                                                |
 | --------------------- | -------------------------------------------------------------------------- |
 | ToggleNumlockLoop.ps1 | Toggles the numlock key on/off every 60 seconds to keep the computer alive |
+| display-env.ps1       | Fetches and displayes the current environment variables, sorted in a table |
 
 ### Bash
 
