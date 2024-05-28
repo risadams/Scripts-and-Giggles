@@ -1,7 +1,6 @@
 # Scripts and Giggles
 
-<img src="assets/logo.webp" alt="logo" width="200"/>
-
+<img src="assets/logo.png" alt="logo" width="200"/>
 
 
 Welcome to the **Scripts and Giggles** project! This repository is dedicated to providing fun and useful scripts to make your development experience more enjoyable.
