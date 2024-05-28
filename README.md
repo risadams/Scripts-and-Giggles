@@ -1,82 +1,61 @@
-# Repo Template
+# Scripts and Giggles
 
-This repository is meant to serve as a general template for how to set up new repositories in the. In general, setting up a new repository should take only a few minutes; use this repository as a way of finding example files, and use the following checklist to ensure that you've set up the repository correctly.
+<img src="assets/logo.webp" alt="logo" width="200"/>
 
-## Install
 
-These instructions are basic; you can use any method to do this work. The important part is making sure that you follow the checklist below before publishing the repository.
 
-```sh
-# Let's make a new folder
-mkdir new-repo && cd new-repo
-# Start a Git instance and copy over template files.
-git init
-cp ../repo-template/* .
-```
+Welcome to the **Scripts and Giggles** project! This repository is dedicated to providing fun and useful scripts to make your development experience more enjoyable.
 
-## Checklist
+## Introduction
 
-Go through this checklist after creating your repository. It should only take a couple of minutes.
+Scripts and Giggles is a collection of scripts designed to simplify various tasks for developers while bringing a bit of joy to your coding routine. Whether you're automating repetitive tasks, generating code snippets, or just having fun with your scripts, this project has something for everyone.
 
-### README
+## Features
 
-- [ ] Update this `README.md` (Note, do last!).
-- [ ] Rename all instances of `<Replace Title>` in README to match the new repo title
-- [ ] Manually go through and edit the rest of the README.
+More scripts are being added on a regular basis, planned features include:
 
-### Other Files
+- **Automated Tasks**: Scripts to automate common development tasks.
+- **Code Generators**: Tools to generate boilerplate code and snippets.
+- **Fun Scripts**: Enjoyable and humorous scripts to lighten your day.
+- **Community Contributions**: Open to contributions and improvements from the community.
 
-- [ ] Copy `CODE_OF_CONDUCT.md` verbatim.
-- [ ] Copy `CONTRIBUTING.md` and ensure that you've added any repository-specific instructions. (Replace `<Replace Title>` again).
-- [ ] Should you have a `CHANGELOG.md`? Document your release process, if you plan on having one, in the `CONTRIBUTING.md` file.
+## Installation
 
-### Dotfiles
+To get started with Scripts and Giggles, clone the repository and install the necessary 
+dependencies.
 
-- [ ] Do you need a `.gitignore` file?
-- [ ] Do you need an `.npmignore` file?
+## Library Contents
 
-### Licenses
+### Usage
 
-- [ ] Copy the MIT license from the example repo.
-- [ ] Have you added `MIT` as the license in the `package.json`?
-- [ ] If you made changes, were these reflected in the last section of the README?
+Each script comes with its own set of instructions.
+Typically, these instructions will be embedded within each script, but some scripts may come with their own README files with detailed instructions
 
-### GitHub Metadata
+### PowerShell
 
-- [ ] Have you added a short description to the repository?
-  - [ ] Is the description matched in the byline under the title in the README?
-- [ ] Have you added topics to the GitHub repository?
-  - [ ] Have you added these topics as keywords in the `package.json`?
+| Script Name           | Description                                                                |
+| --------------------- | -------------------------------------------------------------------------- |
+| ToggleNumlockLoop.ps1 | Toggles the numlock key on/off every 60 seconds to keep the computer alive |
 
-### `package.json`
+### Bash
 
-- [ ] Is the `author` field correct?
-- [ ] Have you added `keywords`?
-- [ ] Are the `bugs` and `homepage` fields correct?
-- [ ] Have you added tests? Are they matched, here?
-- [ ] Have you added a `lint` command?
-
-### Tests
-
-- [ ] Are there automated tests?
-- [ ] ...for the browser as well?
-- [ ] Are those reflected in CI?
-- [ ] Bonus points: Using CircleCI workflows to segment tests?
-- [ ] Extra bonus points: Are you cross-testing dependencies?
-
-### Benchmarks
-
-- [ ] Are there benchmarks?
-- [ ] Did you run the benchmarks before / after the change or PR?
-
-### Examples
-
-- [ ] Is there an example folder with usage examples?
-- [ ] For the browser as well?
+| Script Name | Description |
+| ----------- | ----------- |
+|             |             |
 
 ## Contribute
 
-If you think this could be better, please [open an issue](https://github.com/risadams/<Replace Title>/issues/new)!
+We welcome contributions from the community! To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a pull request.
+
+Please ensure your code adheres to our coding standards and includes appropriate tests.
+
+If you think this could be better, please [open an issue](https://github.com/risadams/scripts-and-giggles/issues/new)!
 
 Please note that all interactions in this organization fall under our [Code of Conduct](CODE_OF_CONDUCT.md).
 
