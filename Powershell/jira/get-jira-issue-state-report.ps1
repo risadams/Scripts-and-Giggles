@@ -10,7 +10,7 @@ if ($Debug) {
 }
 
 # Define your JIRA instance URL and the API endpoint you want to access
-$JiraBaseUrl = "INSERT-SERVER-URL-HERE"
+$JiraBaseUrl = "XXXX"
 $ApiEndpoint = "rest/agile/1.0/issue"
 
 $JiraApiToken = Get-Content -Path $JiraApiTokenPath -Raw
