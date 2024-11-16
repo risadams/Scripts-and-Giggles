@@ -41,9 +41,9 @@ Typically, these instructions will be embedded within each script, but some scri
 
 ### Bash
 
-| Script Name | Description |
-| ----------- | ----------- |
-|             |             |
+| Script Name             | Description                                                           |
+| ----------------------- | --------------------------------------------------------------------- |
+| convert-line-endings.sh | Recursivly converts all files from windows to unix style line endings |
 
 ## Contribute
 
