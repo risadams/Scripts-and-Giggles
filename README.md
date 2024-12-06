@@ -1,6 +1,8 @@
 # Scripts and Giggles
 
-<img src="assets/logo.png" alt="logo" width="200"/>
+<p align='center'>
+  <img src="assets/logo.png" alt="logo"  width="200"/>
+</p>
 
 Welcome to the **Scripts and Giggles** project! This repository is dedicated to providing fun and useful scripts to make your development experience more enjoyable.
 
@@ -41,9 +43,10 @@ Typically, these instructions will be embedded within each script, but some scri
 
 ### Bash
 
-| Script Name             | Description                                                           |
-| ----------------------- | --------------------------------------------------------------------- |
-| convert-line-endings.sh | Recursivly converts all files from windows to unix style line endings |
+| Script Name              | Description                                                                     |
+| ------------------------ | ------------------------------------------------------------------------------- |
+| convert-line-endings.sh  | Recursivly converts all files from windows to unix style line endings           |
+| docker-image-metadata.sh | Gather metadata from a docker images, such as ENV variables, expoed ports, etc. |
 
 ## Contribute
 
