@@ -32,14 +32,16 @@ Typically, these instructions will be embedded within each script, but some scri
 
 ### PowerShell
 
-| Category    | Script Name              | Description                                                                |
-| ----------- | ------------------------ | -------------------------------------------------------------------------- |
-| Utility     | Alpha-Sort.ps1           | Organize files and folders into alphabetical folders based on filename     |
-| Utility     | Extension-count.ps1      | Display a list of all file types and the number of files of that type      |
-| Utility     | Get-NextValue.ps1        | Randomly select an item from a list of values                              |
-| Utility     | ToggleNumlockLoop.ps1    | Toggles the numlock key on/off every 60 seconds to keep the computer alive |
-| Environment | display-env.ps1          | Fetches and displayes the current environment variables, sorted in a table |
-| Git         | git-author-analytics.ps1 | creates a CSV files containing the author namw and date of all commits     |
+| Category    | Script Name              | Description                                                                      |
+| ----------- | ------------------------ | -------------------------------------------------------------------------------- |
+| Environment | display-env.ps1          | Fetches and displayes the current environment variables, sorted in a table       |
+| Git         | git-author-analytics.ps1 | creates a CSV files containing the author namw and date of all commits           |
+| Utility     | Alpha-Sort.ps1           | Organize files and folders into alphabetical folders based on filename           |
+| Utility     | Extension-count.ps1      | Display a list of all file types and the number of files of that type            |
+| Utility     | Get-NextValue.ps1        | Randomly select an item from a list of values                                    |
+| Utility     | Get-Otp.ps1              | Securely register and generate One Time Passwords for Multi-factor Authorization |
+| Utility     | synth-voice.ps1          | Example script of how to use text-to-speech from a PS script                     |
+| Utility     | ToggleNumlockLoop.ps1    | Toggles the numlock key on/off every 60 seconds to keep the computer alive       |
 
 ### Bash
 
