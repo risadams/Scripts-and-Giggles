@@ -27,6 +27,7 @@ This script assumes that the user has a valid JIRA API token and the JIRA instan
 
 param(
   [string]$IssueKey,
+  [string]$JiraBaseUrl = "XXXX",
   [string]$JiraApiTokenPath = ".\jira_token.txt",
   [switch]$Debug = $false
 )
@@ -36,7 +37,7 @@ if ($Debug) {
 }
 
 # Define your JIRA instance URL and the API endpoint you want to access
-$JiraBaseUrl = "XXXX"
+
 $ApiEndpoint = "rest/agile/1.0/issue"
 
 $JiraApiToken = Get-Content -Path $JiraApiTokenPath -Raw
