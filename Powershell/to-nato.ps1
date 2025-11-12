@@ -10,6 +10,10 @@ outputs the matching NATO terms (or the original symbol when no match exists).
 One or more strings to translate. Remaining arguments and pipeline input are
 both accepted.
 
+.PARAMETER Normalize
+Removes accents/diacritics before lookup so "café" becomes "Cafe" for NATO
+mapping.
+
 .EXAMPLE
 pwsh Powershell/to-nato.ps1 "Hello World 123"
 Hotel Echo Lima Lima Oscar
@@ -25,19 +29,46 @@ Oscar Papa Sierra
 Get-Content words.txt | pwsh Powershell/to-nato.ps1
 Reads each line from words.txt and prints the NATO translation.
 
+.EXAMPLE
+"café" | pwsh Powershell/to-nato.ps1 -Normalize
+Charlie Alfa Foxtrot Echo
+
 .NOTES
     Author: Ris Adams
-    Date: 2025-011-12
-    Version: 1.0
+    Date: 2025-11-12
+    Version: 1.1
 #>
 [CmdletBinding()]
 param(
   [Parameter(ValueFromPipeline = $true, ValueFromRemainingArguments = $true)]
-  [string[]]$Text
+  [string[]]$Text,
+
+  [switch]$Normalize = $true
 )
 
 begin {
   Set-StrictMode -Version Latest
+
+  function Remove-Diacritics {
+    param(
+      [string]$Value
+    )
+
+    if (-not $Value) {
+      return $Value
+    }
+
+    $normalized = $Value.Normalize([System.Text.NormalizationForm]::FormD)
+    $builder = [System.Text.StringBuilder]::new()
+
+    foreach ($ch in $normalized.ToCharArray()) {
+      if ([System.Globalization.CharUnicodeInfo]::GetUnicodeCategory($ch) -ne [System.Globalization.UnicodeCategory]::NonSpacingMark) {
+        [void]$builder.Append($ch)
+      }
+    }
+
+    $builder.ToString().Normalize([System.Text.NormalizationForm]::FormC)
+  }
 
   $dictionary = @{
     'a' = 'Alfa'
