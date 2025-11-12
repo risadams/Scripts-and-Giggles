@@ -121,7 +121,9 @@ process {
     }
 
     foreach ($word in $item -split '\s+' | Where-Object { $_ }) {
-      $letters = foreach ($character in $word.ToLowerInvariant().ToCharArray()) {
+      $wordToProcess = if ($Normalize) { Remove-Diacritics $word } else { $word }
+
+      $letters = foreach ($character in $wordToProcess.ToLowerInvariant().ToCharArray()) {
         $key = [string]$character
         if ($dictionary.ContainsKey($key)) {
           $dictionary[$key]
